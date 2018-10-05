@@ -1,0 +1,36 @@
+.sliderBtn {
+    background: none;
+    border: none;
+    outline: none;
+}
+.sliderBtn span {
+    position: relative;
+    display: block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid #8D8D8D;
+    border-left: 3px solid #8D8D8D;
+}
+.sliderBtn:hover {
+    opacity: 0.6;
+}
+
+.sliderBtn.sliderNext span{
+    -ms-transform: rotate(-135deg); /* IE 9 */
+    -webkit-transform: rotate(-135deg); /* Safari 3-8 */
+    transform: rotate(-135deg);
+}
+
+.sliderBtn.sliderPrev span{  
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari 3-8 */
+    transform: rotate(45deg);
+
+}
+
+.sliderBtn.disable {
+    opacity: 0.2;
+    pointer-events: none;
+    cursor: default;
+}
